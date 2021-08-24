@@ -1,11 +1,30 @@
-/*! 
- * Template Name: Orbit - Bootstrap 5 Resume/CV Template for Developers
+/*
  * Version: Bootstrap 5 v1.0
- * Author: Xiaoying Riley
- * Copyright: 3rd Wave Media
- * Twitter: @3rdwave_themes
- * Website: http://themes.3rdwavemedia.com/
+ * Author: leandjb
 */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
 body {
   font-family: "Roboto", sans-serif;
   color: #545E6C;
@@ -13,6 +32,7 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align:justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #2e4049;
+  color: #4b83cc;
   text-decoration: none;
 }
 a:hover {
@@ -84,12 +104,13 @@ p {
   margin-bottom: 15px;
 }
 .sidebar-wrapper .contact-list .svg-inline--fa {
-  margin-right: 5px;
-  font-size: 18px;
+  margin-right: 4px;
+  font-size: 16px;
   vertical-align: middle;
 }
 .sidebar-wrapper .contact-list li {
   margin-bottom: 15px;
+  font-size: 12px;
 }
 .sidebar-wrapper .contact-list li:last-child {
   margin-bottom: 0;
@@ -98,17 +119,17 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 15px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
 }
 .sidebar-wrapper .degree {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -119,20 +140,27 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
   margin-bottom: 0px;
   margin-top: 0;
   font-size: 14px;
+  text-align: left;
 }
 .sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255);
   font-weight: 500;
   margin-bottom: 0px;
 }
-.sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
+
+.lang-desc {
+  color: rgba(0, 0, 0, 0.4);
 }
+
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .sidebar-wrapper .languages-list {
   margin-bottom: 0;
 }
@@ -221,7 +249,7 @@ p {
 .main-wrapper .project-title {
   font-size: 16px;
   font-weight: 400;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 .main-wrapper .projects-section .intro {
